@@ -101,7 +101,7 @@ function ContactSection() {
                                         <p className="mt-1 text-[15px] font-semibold text-[var(--text-primary)]">elkihelriyad@gmail.com</p>
                                     </div>
                                 </div>
-                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-white">→</span>
+                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-[var(--text-hover)]">→</span>
                             </a>
 
                             <a href="tel:+212642202828" className="group flex items-center justify-between rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface)] p-5 transition-all hover:bg-[var(--bg-card)] hover:border-[var(--accent)] relative overflow-hidden backdrop-blur-xl shadow-lg">
@@ -114,7 +114,7 @@ function ContactSection() {
                                         <p className="mt-1 text-[15px] font-semibold text-[var(--text-primary)]">+212 642-202828</p>
                                     </div>
                                 </div>
-                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-white">→</span>
+                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-[var(--text-hover)]">→</span>
                             </a>
 
                             <a href="https://www.linkedin.com/in/riyad-elkihel/" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface)] p-5 transition-all hover:bg-[var(--bg-card)] hover:border-[var(--accent)] relative overflow-hidden backdrop-blur-xl shadow-lg">
@@ -129,7 +129,7 @@ function ContactSection() {
                                         <p className="mt-1 text-[15px] font-semibold text-[var(--text-primary)]">EL KIHEL RIYAD</p>
                                     </div>
                                 </div>
-                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-white">→</span>
+                                <span className="text-[#8b9bc0] transition-transform group-hover:translate-x-1 group-hover:text-[var(--text-hover)]">→</span>
                             </a>
 
                         </div>

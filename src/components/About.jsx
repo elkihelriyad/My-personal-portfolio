@@ -46,11 +46,20 @@ function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="relative justify-self-center md:justify-self-center lg:justify-self-end mt-8 md:mt-0"
+            className="relative justify-self-center lg:justify-self-end mt-8 md:mt-0 w-full flex justify-center lg:justify-end"
           >
-            <div className="relative z-10 w-80 md:w-[22rem] lg:w-[30rem] overflow-hidden rounded-[2rem] shadow-[0_0_40px_rgba(59,130,246,0.15)] ring-1 ring-white/10 transition-all duration-500 hover:shadow-[0_0_50px_rgba(59,130,246,0.3)] hover:ring-white/20">
-              <img src={portrait} alt="Riyad portrait" className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105" />
+            <div className="relative z-10 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[440px] aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(59,130,246,0.2)] ring-1 ring-white/10 transition-all duration-700 hover:shadow-[0_30px_60px_rgba(59,130,246,0.4)] hover:ring-white/20 group">
+              <img
+                src={portrait}
+                alt="Riyad portrait"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              {/* Overlay Gradient for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090d17]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             </div>
+
+            {/* Decorative Background Element */}
+            <div className="absolute -inset-4 z-0 bg-gradient-to-tr from-[#3b82f6]/20 to-transparent blur-3xl opacity-50 group-hover:opacity-80 transition-opacity duration-700"></div>
           </motion.div>
 
           <motion.div
@@ -58,6 +67,7 @@ function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
+            className="flex flex-col items-center lg:items-start text-center lg:text-left"
           >
             <div className="flex items-center gap-3">
               <span className="h-[1px] w-6 bg-[var(--accent)]/50"></span>
